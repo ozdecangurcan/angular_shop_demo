@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "Asus Zen Book",
+      "imageUrl": "https://productimages.hepsiburada.net/s/31/375/10347073241138.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 250,
+      "categoryId": 2,
+      "description": "Logitech",
+      "imageUrl": "https://productimages.hepsiburada.net/s/10/375/8907543445554.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "Elektronik"
+    }
+  ]
+}
