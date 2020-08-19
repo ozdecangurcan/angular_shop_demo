@@ -15,6 +15,22 @@
       "categoryId": 2,
       "description": "Logitech",
       "imageUrl": "https://productimages.hepsiburada.net/s/10/375/8907543445554.jpg"
+    },
+    {
+      "imageUrl": "https://productimages.hepsiburada.net/s/32/375/10356112916530.jpg",
+      "name": "Apple IPhone",
+      "description": "Apple IPhone 11",
+      "categoryId": "2",
+      "price": "10000",
+      "id": 3
+    },
+    {
+      "name": "Playstation",
+      "description": "Playstation 4",
+      "imageUrl": "https://productimages.hepsiburada.net/s/6/375/9718384197682.jpg",
+      "price": "3500",
+      "categoryId": "1",
+      "id": 4
     }
   ],
   "categories": [

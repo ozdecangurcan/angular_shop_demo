@@ -15,7 +15,7 @@
       Ürün Bulunmamaktadır!
     </div>
   </ng-template> -->
-  <div *ngFor="let product of products | productFilter:filterText" class="card" style="margin-left: 15px;width: 18rem;">
+  <div *ngFor="let product of products | productFilter:filterText" class="card" style="margin-left: 15px;">
     <img [src]="product.imageUrl" class="card-img-top" alt="Image" />
     <div class="card-body">
       <h5 class="card-title">{{ product.name }}</h5>

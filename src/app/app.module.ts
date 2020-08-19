@@ -7,8 +7,10 @@ import { NavComponent } from './nav/nav.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
-import { FormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
+import { ProductAddCfComponent } from './product/product-add-cf/product-add-cf.component';
+import { ProductAddRfComponent } from './product/product-add-rf/product-add-rf.component'
 
 @NgModule({
   declarations: [
@@ -16,13 +18,16 @@ import { HttpClientModule } from '@angular/common/http'
     NavComponent,
     CategoryComponent,
     ProductComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductAddCfComponent,
+    ProductAddRfComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
