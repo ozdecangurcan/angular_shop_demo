@@ -10,7 +10,10 @@ import { ProductFilterPipe } from './product/product-filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { ProductAddCfComponent } from './product/product-add-cf/product-add-cf.component';
-import { ProductAddRfComponent } from './product/product-add-rf/product-add-rf.component'
+import { ProductAddRfComponent } from './product/product-add-rf/product-add-rf.component';
+import { LoginComponent } from './login/login.component'
+import { AccountService } from './services/account.service';
+import { LoginGuard } from './login/login.guard';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { ProductAddRfComponent } from './product/product-add-rf/product-add-rf.c
     ProductComponent,
     ProductFilterPipe,
     ProductAddCfComponent,
-    ProductAddRfComponent
+    ProductAddRfComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,7 @@ import { ProductAddRfComponent } from './product/product-add-rf/product-add-rf.c
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AccountService,LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
